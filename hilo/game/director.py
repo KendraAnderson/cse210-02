@@ -8,10 +8,18 @@ class Director:
 
     def __init__(self):
         """
-        comments
+        Constructs a new Director.
+
+        Args:
+            Self (Director): and instance of Director.
         
         """
+        self.card = ""
+        self.is_playing = True
+        self.score = 0
+        self.total_score = 0
 
+    
     def start_game(self):
         """
         comments
