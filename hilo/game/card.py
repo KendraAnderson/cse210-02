@@ -18,7 +18,6 @@ class Card:
             self (Card): An instance of Card.        
         """
         self.value = 0
-        self.guessRight = True
 
     def flip(self):
         """
