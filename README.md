@@ -3,7 +3,7 @@ Week 2 Group Assignment
 Hilo is a game in which the player guesses if the next card drawn by the dealer will be higher 
 or lower than the previous one. Points are won or lost based on whether or not the player 
 guessed correctly. If the player guess correctly they gain 100 points, and if they are incorrect
-they lose 75 poitns. The game ends if when the player's score reaches 0.
+they lose 75 poitns. The game ends when the player's score reaches 0.
 
 ## Getting Started
 ---
