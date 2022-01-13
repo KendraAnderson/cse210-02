@@ -17,3 +17,11 @@ class Director:
         comments
         
         """
+    def get_inputs(self):
+        """Ask the user if they want to roll.
+
+        Args:
+            self (Director): An instance of Director.
+            """
+        flip_card = input("Flip a card [y/n] ")
+        self.is_playing = (flip_card == "y")
