@@ -33,9 +33,9 @@ root                    (project root folder)
 ## Authors
 ---
 * Team 7
-    * Kendra Anderson
-    * Daisy Nadauld
-    * Jessica Hansen
-    * Daniel Carril
-    * Anna Berrett
-    * Sterling Tucker
+    * Kendra Anderson kor04003@byui.edu
+    * Daisy Nadauld kun19002@byui.edu
+    * Jessica Hansen bar19007@byui.edu
+    * Daniel Carril car15114@byui.edu
+    * Anna Berrett dia21008@byui.edu
+    * Sterling Tucker sktucker21@byui.edu
