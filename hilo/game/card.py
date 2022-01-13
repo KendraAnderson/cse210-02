@@ -28,5 +28,5 @@ class Card:
             self (Card): An instance of Card.
         """
         self.value = random.randint(1, 13)
-        self.guess = True if guess >= self.value else False if guess <= self.value
+        self.guess = True if guess >= self.value else False if guess <= self.value else 0
         self.points = 100 if self.guess == True else -75 if self.guess == False else 0
