@@ -11,16 +11,22 @@ class Card:
     Attributes:
         value(int): The number on the card currently facing up.    
     """
-    def __init__(self):
+    def __init__(self, guess):
         """Contructs a new instance of Card.
 
         Args:
             self (Card): An instance of Card.        
         """
         self.value = 0
+        self.points = 0
+        self.guess = guess
 
-    def flip(self):
-        """
-        comment here (testing)
+    def flip(self, guess):
+        """Generates a new random value and calculates the points for the card.
         
+        Args:
+            self (Card): An instance of Card.
         """
+        self.value = random.randint(1, 13)
+        self.guess = True if guess >= self.value else False if guess <= self.value
+        self.points = 100 if self.guess == True else -75 if self.guess == False else 0
