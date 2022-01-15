@@ -14,11 +14,13 @@ import pytest
  
     
 def test_flip():
+    "This test will make sure that the random number is withing the parameters set"
     cards_count = [1,2,3,4,5,6,7,8,9,10,11,12,13]
     Card.value = random.randint(1, 13)
     assert cards_count.__contains__(Card.value)
 
 def test_start_game():
+    "This test is to see if the fucntions are run correctly"
      
     while Director == True:
         assert Director.do_flip() == True
@@ -28,6 +30,7 @@ def test_start_game():
         assert Director.is_playing == Director.play_again()
 
 def test_do_flip():
+    "This is test if to verify that the card displayed is correct"
     Director.card = Card()
     Director.previous_card = 0
     Director.current_card = 0
@@ -37,6 +40,7 @@ def test_do_flip():
         assert Director.previous_card == Director.current_card
 
 def test_get_guess():
+    "This test is to make sure that first the guess input is displayed when different than wanted input and that input (moked at the moment) is correctly resived"
 
     Director.guess = ""
         
