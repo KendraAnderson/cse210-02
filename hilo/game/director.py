@@ -71,7 +71,10 @@ class Director:
         self.guess = ""
         
         while (self.guess != "l" and self.guess != "h"):
-            self.guess = input("Higher or Lower? [h/l]")
+            self.guess = input("Higher or Lower? [h/l]").lower()
+
+            if self.guess != "l" and self.guess != "h":
+                print("Please enter an \"h\" or an \"l\".")
         
 
     def do_update(self):
