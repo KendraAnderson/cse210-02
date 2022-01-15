@@ -1,15 +1,23 @@
 from game.card import Card
 
 class Director:
-    """
-    comments
+    """A person who directs the game. 
+    
+    The responsibility of a Director is to control the sequence of play.
+
+    Attributes:
+        card: A Card instance.
+        previous_card (int): the card flipped last round.
+        current_card (int): the card flipped this round.
+        is_playing (boolean): Whether or not the game is being played.
+        guess (string): The score for one round of play.
+        total_score (int): The score for the entire game.
     
     """
 
     def __init__(self):
-        """
-        comments
-        Constructs a new Director.
+        """Constructs a new Director.
+        
         Args:
             Self (Director): and instance of Director.
         
@@ -23,9 +31,12 @@ class Director:
 
     def start_game(self):
         """
-        This method handles the settings to start the game running. 
+        This method starts the game running. 
         It is called by the __main__ file. 
         It calls methods from the director class.
+
+        Args:
+            self (Director): an instance of Director.
         """
         
         while self.is_playing:
@@ -60,14 +71,17 @@ class Director:
         self.guess = ""
         
         while (self.guess != "l" and self.guess != "h"):
-            self.guess = input("Higher or Lower? [h/l]")
+            self.guess = input("Higher or Lower? [h/l]").lower()
+
+            if (self.guess != "l" and self.guess != "h"):
+                print("Please enter an \"h\" or an \"l\".")
         
 
     def do_update(self):
-        """Update the players score.
+        """Update the card.
 
         Args: 
-            self (Director): An instance of Diractor.
+            self (Director): An instance of Director.
         """
         if not self.is_playing:
             return
