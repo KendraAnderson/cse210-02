@@ -125,7 +125,13 @@ class Director:
         if not self.is_playing:
             return
 
-        answer = input("Want to play again? [y/n] ")
+        answer = ""
+
+        while (answer != "y" and answer != "n"):
+            answer = input("Want to play again? [y/n] ").lower()
+        
+            if (answer != "n" and answer != "y"):
+                print("Please enter a \"y\" or an \"n\".")
         
         if answer == "n":
             print("\nGame over. You chose to stop playing.")
