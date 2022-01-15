@@ -54,7 +54,7 @@ def test_get_guess():
         Director.guess = "h"
         assert Director.guess == "h"
 
-def do_update():
+def test_do_update():
     "This test makes sure that the value of the card is correctly updated"
     if Director != True:
         return
